@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 import Avatar from '/avatar.png';
+import GitHub from '../data/GitHub';
 
 const MainPage = () => {
     useEffect(() => {
@@ -18,7 +19,8 @@ const MainPage = () => {
                 </div>
             </Header>
 
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <h1 className='text-center text-[30px]'>GitHub</h1>
+            <GitHub/>
         </Layout>
     );
 } 

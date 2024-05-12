@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/main.scss';
 import MainPage from './pages';
-import TestPage from './pages/test';
+import TestPage from './pages/contact';
+import ContactPage from './pages/contact';
 
 const App = () => {
     return (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage/>}/>
-          <Route path="/test" element={<TestPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
         </Routes>
       </BrowserRouter>
     );
