@@ -35,8 +35,7 @@ const GitHub = () => {
                 {projects.map(project => (
                     <div key={project.id} className="project">
                         <h1 className="text-[20px] uppercase font-bold text-center">{project.name}</h1>
-                        <span className="text-[17px] uppercase text-center">{project.language}</span>
-                        <p className="text-[15px]">{project.description}</p>
+                        <p className="text-[15px] text-center">{project.description}</p>
                     </div>
                 ))}
             </div>

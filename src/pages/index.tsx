@@ -19,6 +19,11 @@ const MainPage = () => {
                 </div>
             </Header>
 
+            <h1 className='text-center text-[30px]'>Portfolio</h1>
+            <img src='' alt='Portfolio'></img> 
+
+            <br />
+
             <h1 className='text-center text-[30px]'>GitHub</h1>
             <GitHub/>
         </Layout>
