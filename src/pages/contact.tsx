@@ -11,7 +11,7 @@ const ContactPage = () => {
         <Layout>
             <Header small={true}>
                 <div className="m-auto">
-                    <h1 className="text-[50px] uppercase font-bold">kontakt</h1>
+                    <h1 className="text-[50px] uppercase font-bold">Kontakt</h1>
                 </div>    
             </Header>
             <br />

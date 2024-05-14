@@ -7,16 +7,17 @@ import 'aos/dist/aos.css';
 const Layout = ({children} : {children: React.ReactNode}) => {
     const [showNav, setNav] = useState(false);
     const year = new Date().getFullYear();
-    let Navbar = 'hidden';
+    let Navbar = ' hidden';
 
     useEffect(() => {
         Aos.init();
     })
 
     if (showNav) {
-        Navbar += ' block';
-        Navbar -= ' hidden'; //tfffff
+        Navbar += ' block ';
+        Navbar -= ' hidden'; 
     }
+
 
     const toggleNav = () => {
         setNav(!showNav);
