@@ -4,20 +4,21 @@ import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+
 const Layout = ({children} : {children: React.ReactNode}) => {
     const [showNav, setNav] = useState(false);
     const year = new Date().getFullYear();
-    let Navbar = ' hidden';
+    let Navbar = 'hidden';
 
     useEffect(() => {
         Aos.init();
     })
 
     if (showNav) {
-        Navbar += ' block ';
-        Navbar -= ' hidden'; 
+        Navbar = 'block';
+    } else {
+        Navbar = 'hidden';
     }
-
 
     const toggleNav = () => {
         setNav(!showNav);
@@ -39,12 +40,12 @@ const Layout = ({children} : {children: React.ReactNode}) => {
                             </svg>
                         </div>
                         <div className="links my-auto max-[900px]:hidden">
-                            <ul className="flex gap-[15px]">
+                            <ul className="flex gap-[15px] font-medium transition-ease duration-[.100s] ">
                                 <li>
-                                    <Link to="/">Hlavní stránka</Link>
+                                    <Link to="/" className='hover:bg-[#00E1FF] rounded-[8px] p-[10px] '>Hlavní stránka</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact">Kontakt</Link>
+                                    <Link to="/contact" className='hover:bg-[#00E1FF] rounded-[8px] p-[10px]'>Kontakt</Link>
                                 </li>
                             </ul>
                         </div>

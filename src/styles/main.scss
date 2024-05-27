@@ -43,7 +43,7 @@ header {
 }
 
 .github {
-    padding: 10px 0 100px 0;
+    padding: 10px 0 150px 0;
     .projects {
         display: flex;
         flex-flow: row wrap;
@@ -57,6 +57,30 @@ header {
             box-shadow: 1px 1px 10px #000;
             padding: 15px;
         }
+    }
+}
+
+.portfolio {
+    padding: 10px 0 150px 0;
+    .projects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 50px;
+
+        .project {
+            width: 300px;
+            background: #141627;
+            border-radius: 1rem;
+            box-shadow: 1px 1px 10px #000;
+            padding: 15px;
+        }
+    }
+}
+
+.loading  {
+    .a {
+        padding: 10px 0
     }
 }
 

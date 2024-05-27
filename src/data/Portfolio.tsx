@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import {Repository} from '../types/GitHub';
+import { Repository } from './../types/Portfolio';
 
-const GitHub = () => {
+
+const Portfolio = () => {
     const [projects, setProjects] = useState<Repository[]>([]);
     const [isLoading, setLoading] = useState(false);
 
@@ -13,7 +14,7 @@ const GitHub = () => {
         setLoading(true);
 
         try {
-            const res = await fetch('https://api.github.com/users/AlexPoky2011Dev/repos');
+            const res = await fetch('https://api.alexpoky2011.fun/portfolio');
             const data = await res.json();
 
             if(data.length > 0) {
@@ -46,12 +47,12 @@ const GitHub = () => {
 
             <div className="projects">
                 {projects.map(project => (
-                    <div key={project.id} className="project text-center">
-                        <h1 className="text-[20px] uppercase font-bold ">{project.name}</h1>
-                        <a className="bg-[#00e1ffa2] p-[5px] rounded-[10px] text-[15px] border-sky-600">{project.language}</a><br />
+                    <div key={project.id} className="project">
+                        <h1 className="text-[20px] uppercase font-bold text-center">{project.name}</h1>
+                        <span><p className="text-center text-[15px]">{project.date}</p></span>
                         ----------------------------------------------
-                        <p className="text-[15px]">{project.description}</p>
-                        <a href={project.svn_url} target="_blank"><p className=" text-[15px] bg-sky-600 rounded-[10px] border-sky-600">Otevřít</p></a>
+                        <p className="text-[15px] text-center">{project.description}</p>
+                        <a href={project.url} target="_blank"><p className="text-center text-[15px] bg-sky-600 rounded-[10px]">Otevřít</p></a>
                     </div>
                 ))}
             </div>
@@ -59,4 +60,4 @@ const GitHub = () => {
     );
 }
 
-export default GitHub;
+export default Portfolio;
