@@ -14,6 +14,18 @@ const Layout = ({children} : {children: React.ReactNode}) => {
         Aos.init();
     })
 
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth >= 900) {
+            setNav(false);
+          }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+
     if (showNav) {
         Navbar = 'block';
     } else {

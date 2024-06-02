@@ -48,7 +48,7 @@ const GitHub = () => {
                 {projects.map(project => (
                     <div key={project.id} className="project text-center">
                         <h1 className="text-[20px] uppercase font-bold ">{project.name}</h1>
-                        <a className="bg-[#00e1ffa2] p-[5px] rounded-[10px] text-[15px] border-sky-600">{project.language}</a><br />
+                        <a className="bg-[] p-[5px] rounded-[10px] text-[15px] border-sky-600">{project.language}</a><br />
                         ----------------------------------------------
                         <p className="text-[15px]">{project.description}</p>
                         <a href={project.svn_url} target="_blank"><p className=" text-[15px] bg-sky-600 rounded-[10px] border-sky-600">Otevřít</p></a>

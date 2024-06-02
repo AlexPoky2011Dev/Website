@@ -20,7 +20,7 @@ const ContactPage = () => {
             <br />
             <div className="contact">
                 <h1 className="text-[27px] text-center">Máš zájem o web nebo o discord bota?</h1>
-                <p className="text-[17px] text-center">Neváhej mi napsat na můj email <a className="text-sky-400 ">alexpoky2011.dev@gmail.com</a><br />také mě můžete kontaktovat na mém discordu <a className="text-sky-400 ">AlexPoky2011#2135</a>.</p>
+                <p className="text-[17px] text-center">Neváhej mi napsat na můj email <a href="mailto:alexpoky2011.dev@gmail.com" className="text-sky-400" target="_blank">alexpoky2011.dev@gmail.com</a><br />také mě můžete kontaktovat na mém discordu <a href="https://discord.com/channels/@me/1233127216758521896" className="text-sky-400 " target="_blank">AlexPoky2011#2135</a>.</p>
             </div>
             <br /><br />
 
