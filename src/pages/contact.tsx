@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 
+import { AiFillPlusCircle } from "react-icons/ai";
+
+
 const ContactPage = () => {
     useEffect(() => {
         document.title = "AlexPoky2011 • Kontakt";
@@ -11,7 +14,7 @@ const ContactPage = () => {
         <Layout>
             <Header small={true}>
                 <div className="m-auto">
-                    <h1 className="text-[50px] uppercase font-bold">kontakt</h1>
+                    <h1 className="text-[50px] uppercase font-bold  max-[767px]:text-[35px]">kontakt</h1>
                 </div>    
             </Header>
             <br />
@@ -19,12 +22,23 @@ const ContactPage = () => {
             <br />
             <br />
             <div className="contact">
-                <h1 className="text-[27px] text-center">Máš zájem o web nebo o discord bota?</h1>
+                <h1 className="text-[27px] text-center font-medium">Máš zájem o web nebo o discord bota?</h1>
                 <p className="text-[17px] text-center">Neváhej mi napsat na můj email <a href="mailto:alexpoky2011.dev@gmail.com" className="text-sky-400" target="_blank">alexpoky2011.dev@gmail.com</a><br />také mě můžete kontaktovat na mém discordu <a href="https://discord.com/channels/@me/1233127216758521896" className="text-sky-400 " target="_blank">AlexPoky2011#2135</a>.</p>
             </div>
             <br /><br />
 
-            <h1 className="text-[27px] text-center">Platební Metody</h1>
+            <h1 className="text-[27px] text-center font-medium">Výhody</h1>
+
+            <div className="flex justify-center mb-4 flex-wrap">
+              <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Nízké Ceny</span></a>
+              <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Flexibilní spolupráce</span></a>
+              <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Rychlé dodání</span></a>
+              <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Kvalita kódování</span></a>
+              <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Rychlý kontakt</span></a>
+            </div>
+            <br /><br />
+
+            <h1 className="text-[27px] text-center font-medium">Platební Metody</h1>
             
            <div className="flex justify-center mb-4">             
  

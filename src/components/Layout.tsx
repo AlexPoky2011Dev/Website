@@ -54,10 +54,10 @@ const Layout = ({children} : {children: React.ReactNode}) => {
                         <div className="links my-auto max-[900px]:hidden">
                             <ul className="flex gap-[15px] font-medium transition-ease duration-[.100s] ">
                                 <li>
-                                    <Link to="/" className='hover:bg-[#00E1FF] rounded-[8px] p-[10px] '>Hlavní stránka</Link>
+                                    <Link to="/" className='hover:bg-[#00E1FF] rounded-[8px] p-[10px] font-medium'>Hlavní stránka</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact" className='hover:bg-[#00E1FF] rounded-[8px] p-[10px]'>Kontakt</Link>
+                                    <Link to="/contact" className='hover:bg-[#00E1FF] rounded-[8px] p-[10px] font-medium'>Kontakt</Link>
                                 </li>
                             </ul>
                         </div>
@@ -67,10 +67,10 @@ const Layout = ({children} : {children: React.ReactNode}) => {
                 <div className={`${Navbar} px-[30px]`}>
                     <ul className="flex flex-col gap-[5px]">
                         <li className="block">
-                            <Link to="/">Hlavní stránka</Link>
+                            <Link to="/" className='font-medium'>Hlavní stránka</Link>
                         </li>
                         <li className="block">
-                            <Link to="/contact">Kontakt</Link>
+                            <Link to="/contact" className='font-medium'>Kontakt</Link>
                         </li>
                     </ul>
                 </div>

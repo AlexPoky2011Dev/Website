@@ -12,7 +12,7 @@ const ErrorPage = () => {
             <Header>
                 <div className="m-auto">
                     <h1 className="text-[50px] uppercase font-bold max-[767px]:text-center max-[767px]:text-[35px]">404 error!</h1>
-                    <h2 className="text-[35px] text-center text-[#aaa] max-[767px]:text-[30px]">Tato stránka nebyla nalezena.</h2>
+                    <h2 className="text-[35px] text-center text-[#aaa] max-[767px]:text-[25px]">Tato stránka nebyla nalezena.</h2>
                 </div>    
             </Header>
         </Layout>
