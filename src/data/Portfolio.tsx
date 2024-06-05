@@ -48,11 +48,16 @@ const Portfolio = () => {
             <div className="projects">
                 {projects.map(project => (
                     <div key={project.id} className="project">
-                        <h1 className="text-[20px] uppercase font-bold text-center">{project.name}</h1>
-                        <span><p className="text-center text-[15px]">{project.date}</p></span>
-                        ----------------------------------------------
-                        <p className="text-[15px] text-center">{project.description}</p>
-                        <a href={project.url} target="_blank"><p className="text-center text-[15px] bg-sky-600 rounded-[10px]">Otevřít</p></a>
+                        <img src={project.image} height={1000} width={1000}/>
+                        <br />
+                        <div className="flex justify-between"> 
+                            <p className="text-[16px] bg-amber-600 py-[3px] rounded-[5px] px-[4px]">{project.date}</p>
+                            <p className="text-[16px] bg-cyan-500 py-[3px] rounded-[5px] px-[4px] ">{project.language}</p>
+                        </div>  
+                        <div className="cara"></div>
+                        <h1 className="text-[23px] uppercase font-bold">{project.name}</h1>  
+                        <p className="text-[15px]">{project.description}</p>
+                        <a href={project.url} target="_blank"><p className="text-center text-[15px] bg-sky-600 p-[2px] rounded-[5px] mt-[6px]">Otevřít</p></a>
                     </div>
                 ))}
             </div>

@@ -49,9 +49,9 @@ const GitHub = () => {
                     <div key={project.id} className="project text-center">
                         <h1 className="text-[20px] uppercase font-bold ">{project.name}</h1>
                         <a className="bg-[] p-[5px] rounded-[10px] text-[15px] border-sky-600">{project.language}</a><br />
-                        ----------------------------------------------
+                        <div className="cara"></div>
                         <p className="text-[15px]">{project.description}</p>
-                        <a href={project.svn_url} target="_blank"><p className=" text-[15px] bg-sky-600 rounded-[10px] border-sky-600">Otevřít</p></a>
+                        <a href={project.svn_url} target="_blank"><p className=" text-[15px] bg-sky-600 rounded-[5px] border-sky-600 p-[2px] mt-[6px]">Otevřít</p></a>
                     </div>
                 ))}
             </div>

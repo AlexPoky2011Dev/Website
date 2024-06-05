@@ -5,16 +5,22 @@ import ContactPage from './pages/contact';
 import ErrorPage from './pages/error';
 
 
+  
+
 const App = () => {
+
     return (
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainPage/>}/>
-          <Route path="/contact" element={<ContactPage/>}/>
-          <Route path="/*" element={<ErrorPage/>}/>
-        </Routes>
+         <Routes>
+           <Route path="/" element={<MainPage/>}/>
+           <Route path="/contact" element={<ContactPage/>}/>
+           <Route path="/*" element={<ErrorPage/>}/>
+         </Routes>
       </BrowserRouter>
     );
+
 }
 
 export default App
+
+
