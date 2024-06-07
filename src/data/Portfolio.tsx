@@ -14,7 +14,7 @@ const Portfolio = () => {
         setLoading(true);
 
         try {
-            const res = await fetch('https://api.alexpoky2011.fun/portfolio');
+            const res = await fetch('https://api.alexpoky2011.fun/portfolio?apiKey=GhJ4EeH2L9');
             const data = await res.json();
 
             if(data.length > 0) {
