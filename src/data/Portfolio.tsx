@@ -48,7 +48,7 @@ const Portfolio = () => {
             <div className="projects">
                 {projects.map(project => (
                     <div key={project.id} className="project">
-                        <img src={project.image} height={1000} width={1000}/>
+                        <img src={project.image}/>
                         <br />
                         <div className="flex justify-between"> 
                             <p className="text-[16px] bg-amber-600 py-[3px] rounded-[5px] px-[4px]">{project.date}</p>
