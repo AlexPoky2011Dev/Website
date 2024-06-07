@@ -43,7 +43,6 @@ const MainPage = () => {
               <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Nízké ceny</span></a>
               <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Flexibilní spolupráce</span></a>
               <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Rychlé dodání</span></a>
-              <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Kvalita kódování</span></a>
               <a className="bg-[#48ff0049] p-[8px] rounded-[8px] flex items-center mr-4 mb-4"><AiFillPlusCircle size={20} className="fill-green-600" /><span className="ml-2">Rychlý kontakt</span></a>
            </div>
         
